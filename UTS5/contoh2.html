@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Switch Align</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 overflow-auto h-screen">
+
+    <!-- Garis biru full layar atas -->
+    <div class="w-full h-16 bg-blue-700 fixed top-0 left-0 z-10"></div>
+
+    <!-- Konten scrollable -->
+    <div class="pt-20 h-[200vh]">
+        <!-- 3 kotak biru - adaptif split screen -->
+        <div class="fixed bottom-8 z-20 transition-all duration-300 
+                    md:flex-col md:flex md:right-6 md:w-24 md:gap-3 md:left-auto md:-translate-x-0 md:h-auto
+                    flex flex-row justify-between gap-2 left-1/2 -translate-x-1/2 w-72 h-12 px-4">
+            <div class="w-20 h-12 bg-blue-600 shadow-lg flex items-center justify-center text-white font-bold text-sm">A</div>
+            <div class="w-20 h-12 bg-blue-600 shadow-lg flex items-center justify-center text-white font-bold text-sm">B</div>
+            <div class="w-20 h-12 bg-blue-600 shadow-lg flex items-center justify-center text-white font-bold text-sm">C</div>
+        </div>
+    </div>
+
+</body>
+</html>
